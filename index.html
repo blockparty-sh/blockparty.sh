@@ -3,9 +3,27 @@
 <head>
 	<meta class="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>Evie by unDraw</title>
+	<title>Blockparty</title>
 	<!-- Don't forget to add your metadata here -->
 	<link rel='stylesheet' href='css/style.min.css' />
+    <link rel="stylesheet" href="wallet/dist/blockparty-wallet.css">
+<style>
+.hero__overlay--gradient {
+    background: -webkit-gradient(linear,left top,right top,from(#070407),to(#2f1e74));
+    background: linear-gradient(90deg,#070407,#2f1e74);
+}
+.navbar {
+    background: #2f1e74;
+}
+.button__accent {
+    background-color: #7b3a83;
+    border-color: #7b3a83;
+}
+.cta--reverse {
+    background: -webkit-gradient(linear,left top,right top,from(#2f1e74),to(#070407));
+    background: linear-gradient(90deg,#2f1e74,#070407);
+}
+</style>
 </head>
 <body>
 	<!-- Hero(extended) navbar -->
@@ -13,11 +31,11 @@
 		<nav class="nav__mobile"></nav>
 		<div class="container">
 			<div class="navbar__inner">
-				<a href="index.html" class="navbar__logo">Logo</a>
+				<a href="index.html" class="navbar__logo">Blockparty</a>
 				<nav class="navbar__menu">
 					<ul>
-						<li><a href="#">Option</a></li>
-						<li><a href="#">Option 2</a></li>
+						<li><a href="https://github.com/blockparty-sh/wallet">Download</a></li>
+						<li><a href="https://github.com/blockparty-sh/wallet/blob/master/README.md">Docs</a></li>
 					</ul>
 				</nav>
 				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
@@ -32,10 +50,9 @@
 			<div class="container">
 				<div class="hero__content">
 					<div class="hero__content__inner" id='navConverter'>
-						<h1 class="hero__title">A production-ready theme for your projects</h1>
-						<p class="hero__text">Evie is an MIT licensed template bundled with a minimal style guide to build websites faster. It is extemely lightweight, customizable and works perfectly on modern browsers.</p>
-						<a href="#" class="button button__accent">Download Evie</a>
-						<a href="#" class="button hero__button">Learn more</a>
+						<h1 class="hero__title">Blockparty Wallet</h1>
+						<p class="hero__text">Blockparty wallet is an in-browser Bitcoin Cash wallet which is designed to be embedded into web applications to speed up development of new blockchain apps. It does not require you to run a bitcoin node or any other software on your server, deploy and configure with just Javascript and CSS.</p>
+						<a href="https://github.com/blockparty-sh/wallet" class="button button__accent">Download Wallet</a>
 					</div>
 				</div>
 			</div>
@@ -49,7 +66,7 @@
 	<!-- Steps -->
 	<div class="steps landing__section">
 		<div class="container">
-			<h2>Who can use Evie?</h2>
+			<h2>Who can use Blockparty?</h2>
 			<p>Here's who we can think of, but surely creative people will surprise us.</p>
 		</div>
 		<div class="container">
@@ -59,21 +76,21 @@
 						<img src="./images/undraw_designer.svg" class="step__image">
 					</div>
 					<h4>Programmers</h4>
-					<p class="step__text">A landing page for your open source projects. Present your solution, easily create docs.</p>
+					<p class="step__text">Blockparty Wallet is designed to be easily modified and extended.</p>
 				</div>
 				<div class="step">
 					<div class="step__media">
 						<img src="./images/undraw_responsive.svg" class="step__image">
 					</div>
 					<h4>Designers</h4>
-					<p class="step__text">A website for your own freebies. Let the world download and use your artwork.</p>
+					<p class="step__text">Theming is made easy to match the look and feel of your application.</p>
 				</div>
 				<div class="step">
 					<div class="step__media">
 						<img src="./images/undraw_creation.svg" class="step__image">
 					</div>
 					<h4>Makers</h4>
-					<p class="step__text">A great starting point for your web application. Focus on your idea and execution.</p>
+					<p class="step__text">Focus on your idea and execution instead of trying to remake your own in browser wallet.</p>
 				</div>
 			</div>
 		</div>
@@ -83,11 +100,11 @@
 		<div class="container">
 			<div class="expanded__inner">
 				<div class="expanded__media">
-					<img src="./images/undraw_browser.svg" class="expanded__image">
+					<img src="./images/undraw_wallet_aym5.svg" class="expanded__image">
 				</div>
 				<div class="expanded__content">
-					<h2 class="expanded__title">Natural styling with almost nothing to learn</h2>
-					<p class="expanded__text">Evie brings you the pages you'll need and the structure to create your own, without a learning curve. It is minimal and mostly styles plain elements. There are only a few classes you'll need to know but nothing to disrupt your preferred coding style.</p>
+					<h2 class="expanded__title">Embed a Bitcoin Wallet 5 minutes</h2>
+					<p class="expanded__text">Blockparty Wallet brings you the functionality you'll need and the structure to build on, without much of a learning curve. It is minimal and aims to solve the general case while making it easy to modify for more advanced usecases.</p>
 				</div>
 			</div>
 		</div>
@@ -96,11 +113,11 @@
 		<div class="container">
 			<div class="expanded__inner">
 				<div class="expanded__media">
-					<img src="./images/undraw_frameworks.svg" class="expanded__image">
+					<img src="./images/undraw_bitcoin2_ave7.svg" class="expanded__image">
 				</div>
 				<div class="expanded__content">
-					<h2 class="expanded__title">Framework agnostic. Your front-end setup, your choice.</h2>
-					<p class="expanded__text">Evie has zero dependencies and uses vanilla JavaScript for a few functions with minimal footprint. You can use React, Vue, Angular, jQuery or whatever you prefer.</p>
+					<h2 class="expanded__title">Built for Aspiring Bitcoin Developers</h2>
+					<p class="expanded__text">This wallet was grown out of a pet project to make a Bitcoin Cash powered app. What I found was that developing the wallet part was quite a difficult task in itself. Making the wallet reusable was then chosen as a more important goal to complete first.</p>
 				</div>
 			</div>
 		</div>
@@ -112,8 +129,8 @@
 					<img src="./images/together.svg" class="expanded__image">
 				</div>
 				<div class="expanded__content">
-					<h2 class="expanded__title">Ready for production or rapid prototyping</h2>
-					<p class="expanded__text">Landing, authentication and a few other pages to select from, despite the small size. Tested on production at unDraw with amazing speeds and unopinionated on how to structure your project. We really hope you'll find it awesome and useful!</p>
+					<h2 class="expanded__title">Ready for rapid prototyping</h2>
+					<p class="expanded__text">Comes out of the box with mnemonic generator, WIF import, qr code receive page, ability to send, realtime updates, and an action panel to list past actions done using your app. We really hope you'll find it awesome and useful!</p>
 				</div>
 			</div>
 		</div>
@@ -123,8 +140,8 @@
 		<div class="container">
 			<div class="cta__inner">
 				<h2 class="cta__title">Get started now</h2>
-				<p class="cta__sub cta__sub--center">Grab the production version and begin your project instantly.</p>
-				<a href="#" class="button button__accent">Download Evie</a>
+				<p class="cta__sub cta__sub--center">Grab the code and begin your project instantly.</p>
+				<a href="https://github.com/blockparty-sh/wallet" class="button button__accent">Download Wallet</a>
 			</div>
 		</div>
 	</div>
@@ -132,39 +149,46 @@
 	<div class="footer footer--dark">
 		<div class="container">
 			<div class="footer__inner">
-				<a href="index.html" class="footer__textLogo">Evie theme</a>
+				<a href="index.html" class="footer__textLogo">Blockparty</a>
 				<div class="footer__data">
 					<div class="footer__data__item">
-						<div class="footer__row">
-							Created by <a href="https://twitter.com/ninalimpi" target="_blank" class="footer__link">Katerina Limpitsouni</a>
-						</div>
-						<div class="footer__row">
-						Code/design by <a href="https://twitter.com/anges244" target="_blank" class="footer__link">Aggelos Gesoulis</a>
-						</div>
 					</div>
 					<div class="footer__data__item">
-						<div class="footer__row">Created for <a href="https://undraw.co" target="_blank" class="footer__link">unDraw</a>
-						</div>
-						<div class="footer__row">Special thx to <a href="https://shareboost.co" target="_blank" class="footer__link">ShareBoost</a> for the support
-						</div>
 					</div>
 					<div class="footer__data__item">
 					<div class="footer__row">
-						<a href="https://github.com/anges244/evie" target="_blank" class="footer__link">GitHub</a>
+						<a href="https://github.com/blockparty-sh/wallet" target="_blank" class="footer__link">GitHub</a>
 					</div>
 					<div class="footer__row">
-						<a href="https://twitter.com/undraw_co" target="_blank" class="footer__link">Twitter</a>
-					</div>
-					<div class="footer__row">
-						<a href="https://www.facebook.com/undraw.co/" target="_blank" class="footer__link">Facebook</a>
-					</div>
-					<div class="footer__row">
-						<a href="./additional.html" class="footer__link">MIT license</a>
+						<a href="#" class="footer__link">MIT license</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 <script src='js/app.min.js'></script>
+<script src="wallet/dist/blockparty-wallet.js"></script>
+<style>
+#blockparty-wallet {
+    position:fixed;
+    bottom:-13px;
+    right:0px;
+    width:25rem;
+    z-index:1000;
+}
+#blockparty-wallet h1,
+#blockparty-wallet h2,
+#blockparty-wallet h3,
+#blockparty-wallet h4,
+#blockparty-wallet h5,
+#blockparty-wallet h6 {
+    color: #fff;
+}
+</style>
+<script>
+blockparty.init({
+    'bitdb_token': 'qp9rzh6levrrn5r5x4slc6q7qxhl452dty5nuyuq6m',
+});
+</script>
 </body>
 </html>
