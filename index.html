@@ -3,11 +3,25 @@
 <head>
 	<meta class="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>Blockparty</title>
+	<title>BlockParty</title>
 	<!-- Don't forget to add your metadata here -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="craft.cash">
+    <meta name="application-name" content="craft.cash">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+
 	<link rel='stylesheet' href='css/style.min.css' />
     <link rel="stylesheet" href="wallet/dist/blockparty-wallet.css">
 <style>
+.hero {
+    background-image: url('/images/ezra-comeau-jeffrey-77199-unsplash.jpg');
+}
 .hero__overlay--gradient {
     background: -webkit-gradient(linear,left top,right top,from(#070407),to(#2f1e74));
     background: linear-gradient(90deg,#070407,#2f1e74);
@@ -23,6 +37,9 @@
     background: -webkit-gradient(linear,left top,right top,from(#2f1e74),to(#070407));
     background: linear-gradient(90deg,#2f1e74,#070407);
 }
+.hero__content {
+    min-height: fit-content;
+}
 </style>
 </head>
 <body>
@@ -31,11 +48,13 @@
 		<nav class="nav__mobile"></nav>
 		<div class="container">
 			<div class="navbar__inner">
-				<a href="index.html" class="navbar__logo">Blockparty</a>
+				<a href="index.html" class="navbar__logo">BlockParty</a>
 				<nav class="navbar__menu">
 					<ul>
 						<li><a href="https://github.com/blockparty-sh/wallet">Download</a></li>
 						<li><a href="https://github.com/blockparty-sh/wallet/blob/master/README.md">Docs</a></li>
+						<li><a href="/wallet/examples/simple.html">Example 1</a></li>
+						<li><a href="/wallet/examples/memo.html">Example 2</a></li>
 					</ul>
 				</nav>
 				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
@@ -50,8 +69,8 @@
 			<div class="container">
 				<div class="hero__content">
 					<div class="hero__content__inner" id='navConverter'>
-						<h1 class="hero__title">Blockparty Wallet</h1>
-						<p class="hero__text">Blockparty wallet is an in-browser Bitcoin Cash wallet which is designed to be embedded into web applications to speed up development of new blockchain apps. It does not require you to run a bitcoin node or any other software on your server, deploy and configure with just Javascript and CSS.</p>
+						<h1 class="hero__title">BlockParty Wallet</h1>
+						<p class="hero__text">BlockParty wallet is an in-browser Bitcoin Cash wallet which is designed to be embedded into web applications to speed up development of new blockchain apps. It does not require you to run a bitcoin node or any other software on your server, deploy and configure with just Javascript and CSS.</p>
 						<a href="https://github.com/blockparty-sh/wallet" class="button button__accent">Download Wallet</a>
 					</div>
 				</div>
@@ -66,7 +85,7 @@
 	<!-- Steps -->
 	<div class="steps landing__section">
 		<div class="container">
-			<h2>Who can use Blockparty?</h2>
+			<h2>Who can use BlockParty?</h2>
 			<p>Here's who we can think of, but surely creative people will surprise us.</p>
 		</div>
 		<div class="container">
@@ -76,7 +95,7 @@
 						<img src="./images/undraw_designer.svg" class="step__image">
 					</div>
 					<h4>Programmers</h4>
-					<p class="step__text">Blockparty Wallet is designed to be easily modified and extended.</p>
+					<p class="step__text">BlockParty Wallet is designed to be easily modified and extended.</p>
 				</div>
 				<div class="step">
 					<div class="step__media">
@@ -104,7 +123,12 @@
 				</div>
 				<div class="expanded__content">
 					<h2 class="expanded__title">Embed a Bitcoin Wallet 5 minutes</h2>
-					<p class="expanded__text">Blockparty Wallet brings you the functionality you'll need and the structure to build on, without much of a learning curve. It is minimal and aims to solve the general case while making it easy to modify for more advanced usecases.</p>
+					<p class="expanded__text">BlockParty Wallet brings you the functionality you'll need and the structure to build on, without much of a learning curve. It is minimal and aims to solve the general case while making it easy to modify for more advanced usecases.
+                    <br>
+                    <pre>blockparty.init({
+    'bitdb_token': 'TOKEN_GOES_HERE'
+});</pre>
+                    </p>
 				</div>
 			</div>
 		</div>
@@ -149,7 +173,7 @@
 	<div class="footer footer--dark">
 		<div class="container">
 			<div class="footer__inner">
-				<a href="index.html" class="footer__textLogo">Blockparty</a>
+				<a href="index.html" class="footer__textLogo">BlockParty</a>
 				<div class="footer__data">
 					<div class="footer__data__item">
 					</div>
@@ -160,7 +184,7 @@
 						<a href="https://github.com/blockparty-sh/wallet" target="_blank" class="footer__link">GitHub</a>
 					</div>
 					<div class="footer__row">
-						<a href="#" class="footer__link">MIT license</a>
+						<a href="/LICENSE" class="footer__link">Theme License</a>
 					</div>
 				</div>
 			</div>
